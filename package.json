@@ -1,23 +1,32 @@
 {
-  "name": "ecommerce-platform",
-  "version": "1.0.0",
+  "name": "fujibeauty",
   "private": true,
-  "workspaces": [
-    "services/*",
-    "packages/*"
-  ],
   "scripts": {
-    "dev:auth": "npm run dev --workspace=auth-service",
-    "dev:gateway": "npm run dev --workspace=api-gateway",
-    "build": "npm run build --workspaces --if-present",
-    "test": "npm run test --workspaces --if-present",
-    "infra:up": "docker compose up -d postgres redis zookeeper kafka kafka-ui",
-    "infra:down": "docker compose down",
-    "up": "docker compose up -d --build",
-    "down": "docker compose down",
-    "logs": "docker compose logs -f"
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "check-types": "turbo run check-types"
   },
   "devDependencies": {
-    "typescript": "^5.5.4"
+    "prettier": "^3.7.4",
+    "turbo": "^2.10.8",
+    "typescript": "5.9.2"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "npm",
+      "version": "10.9.3"
+    }
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "dependencies": {
+    "http-proxy-middleware": "^4.2.0"
   }
 }

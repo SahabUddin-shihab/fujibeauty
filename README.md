@@ -1,64 +1,159 @@
-# AI-Powered E-Commerce Platform — Microservices Monorepo
+# Turborepo starter
 
-## Status
-Services implemented so far: **API Gateway**, **Auth Service**, **User Service**.
-Remaining services (Product, Category, Inventory, Cart, Wishlist, Order, Payment,
-Notification, Email, AI Recommendation, AI Search, Admin) are scaffolded in the
-architecture (topics, gateway routes, docker-compose service names already reserved)
-but not yet implemented — the gateway returns `503 SERVICE_UNAVAILABLE` for their
-routes until they're built.
+This Turborepo starter is maintained by the Turborepo core team.
 
-## Prerequisites
-Only Node.js, Docker Desktop, and VS Code are assumed. Nothing else needs local install —
-Postgres, Kafka, Redis all run in containers.
+## Using this example
 
-## Run everything
-```bash
-npm install
-docker compose up -d --build
+Run the following command:
+
+```sh
+npx create-turbo@latest
 ```
 
-- API Gateway: http://localhost:3000
-- Auth Service Swagger: http://localhost:4001/docs (also proxied via gateway)
-- User Service Swagger: http://localhost:4002/docs
-- Kafka UI: http://localhost:8090
+## What's inside?
 
-## Try it
-```bash
-# Register
-curl -X POST http://localhost:3000/api/v1/auth/register \
-  -H "Content-Type: application/json" \
-  -d '{"email":"jane@example.com","password":"Passw0rd1","firstName":"Jane","lastName":"Doe"}'
+This Turborepo includes the following packages/apps:
 
-# Login
-curl -X POST http://localhost:3000/api/v1/auth/login \
-  -H "Content-Type: application/json" \
-  -d '{"email":"jane@example.com","password":"Passw0rd1"}'
+### Apps and Packages
 
-# Use the returned accessToken
-curl http://localhost:3000/api/v1/users/me \
-  -H "Authorization: Bearer <accessToken>"
+- `docs`: a [Next.js](https://nextjs.org/) app
+- `web`: another [Next.js](https://nextjs.org/) app
+- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
+- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
+- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
+
+Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+
+### Utilities
+
+This Turborepo has some additional tools already setup for you:
+
+- [TypeScript](https://www.typescriptlang.org/) for static type checking
+- [ESLint](https://eslint.org/) for code linting
+- [Prettier](https://prettier.io) for code formatting
+
+### Build
+
+To build all apps and packages, run the following command:
+
+With [global `turbo`](https://turborepo.dev/docs/getting-started/installation#global-installation) installed (recommended):
+
+```sh
+cd my-turborepo
+turbo build
 ```
 
-Registering publishes a `UserRegistered` Kafka event; user-service consumes it and
-materializes the profile — so `/api/v1/users/me` will 404 for a few hundred ms
-immediately after registration until the event is processed.
+Without global `turbo`, use your package manager:
 
-## Architecture notes
-- Each service owns its own Postgres database (`auth_db`, `user_db`, ...), created
-  automatically by `infra/postgres/init-multi-db.sh` on first boot.
-- The API Gateway is the **only** service that verifies JWTs. It injects trusted
-  `x-user-id` / `x-user-email` / `x-user-role` headers onto proxied requests;
-  downstream services trust those headers rather than re-verifying tokens. This
-  trust boundary depends on downstream services never being reachable directly
-  from outside the Docker network in production (their ports are only exposed
-  here for local development convenience).
-- Cross-service communication for anything non-request/response goes through
-  Kafka using the typed events in `packages/kafka-client/src/topics.ts`.
-- Refresh tokens are opaque random strings; only their SHA-256 hash is stored,
-  and they rotate on every use.
+```sh
+cd my-turborepo
+npx turbo build
+npm dlx turbo build
+npm exec turbo build
+```
 
-## Continuing the build
-The remaining 12 services will be added in this same pattern: Prisma schema →
-config → repository → service → controller → routes → Kafka handlers → Swagger →
-Dockerfile → wired into docker-compose + gateway registry.
+You can build a specific package by using a [filter](https://turborepo.dev/docs/crafting-your-repository/running-tasks#using-filters):
+
+With [global `turbo`](https://turborepo.dev/docs/getting-started/installation#global-installation) installed:
+
+```sh
+turbo build --filter=docs
+```
+
+Without global `turbo`:
+
+```sh
+npx turbo build --filter=docs
+npm exec turbo build --filter=docs
+npm exec turbo build --filter=docs
+```
+
+### Develop
+
+To develop all apps and packages, run the following command:
+
+With [global `turbo`](https://turborepo.dev/docs/getting-started/installation#global-installation) installed (recommended):
+
+```sh
+cd my-turborepo
+turbo dev
+```
+
+Without global `turbo`, use your package manager:
+
+```sh
+cd my-turborepo
+npx turbo dev
+npm exec turbo dev
+npm exec turbo dev
+```
+
+You can develop a specific package by using a [filter](https://turborepo.dev/docs/crafting-your-repository/running-tasks#using-filters):
+
+With [global `turbo`](https://turborepo.dev/docs/getting-started/installation#global-installation) installed:
+
+```sh
+turbo dev --filter=web
+```
+
+Without global `turbo`:
+
+```sh
+npx turbo dev --filter=web
+npm exec turbo dev --filter=web
+npm exec turbo dev --filter=web
+```
+
+### Remote Caching
+
+> [!TIP]
+> Vercel Remote Cache is free for all plans. Get started today at [vercel.com](https://vercel.com/signup?utm_source=remote-cache-sdk&utm_campaign=free_remote_cache).
+
+Turborepo can use a technique known as [Remote Caching](https://turborepo.dev/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
+
+By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup?utm_source=turborepo-examples), then enter the following commands:
+
+With [global `turbo`](https://turborepo.dev/docs/getting-started/installation#global-installation) installed (recommended):
+
+```sh
+cd my-turborepo
+turbo login
+```
+
+Without global `turbo`, use your package manager:
+
+```sh
+cd my-turborepo
+npx turbo login
+npm exec turbo login
+npm exec turbo login
+```
+
+This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
+
+Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
+
+With [global `turbo`](https://turborepo.dev/docs/getting-started/installation#global-installation) installed:
+
+```sh
+turbo link
+```
+
+Without global `turbo`:
+
+```sh
+npx turbo link
+npm exec turbo link
+npm exec turbo link
+```
+
+## Useful Links
+
+Learn more about the power of Turborepo:
+
+- [Tasks](https://turborepo.dev/docs/crafting-your-repository/running-tasks)
+- [Caching](https://turborepo.dev/docs/crafting-your-repository/caching)
+- [Remote Caching](https://turborepo.dev/docs/core-concepts/remote-caching)
+- [Filtering](https://turborepo.dev/docs/crafting-your-repository/running-tasks#using-filters)
+- [Configuration Options](https://turborepo.dev/docs/reference/configuration)
+- [CLI Usage](https://turborepo.dev/docs/reference/command-line-reference)
