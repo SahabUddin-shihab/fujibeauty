@@ -20,4 +20,8 @@ router.use('/order', proxy("http://localhost:5004",{
     proxyReqPathResolver: (req)=> '/'
 }));
 
+router.use('/order', proxy("http://localhost:5005",{
+    proxyReqPathResolver: (req)=> '/'
+}));
+
 export default router;
