@@ -11,6 +11,7 @@ router.use('/notification', proxy("http://localhost:5002", {
     proxyReqPathResolver: (req)=> '/'
 }));
 
+
 router.use('/order', proxy("http://localhost:5003",{
     proxyReqPathResolver: (req)=> '/'
 }))
