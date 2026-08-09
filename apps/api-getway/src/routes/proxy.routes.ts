@@ -1,26 +1,27 @@
 import { Router } from "express"
 import proxy from "express-http-proxy";
+import { ENV as env } from "@/config/env";
 
 const router= Router();
 
-router.use('/auth',proxy("http://localhost:5001", {
+router.use('/auth',proxy(env.AUTH_SERVICE_URL, {
     proxyReqPathResolver: (req)=> '/'
 }));
 
-router.use('/notification', proxy("http://localhost:5002", {
+router.use('/notification', proxy(env.NOTIFICATION_SERVICE_URL, {
     proxyReqPathResolver: (req)=> '/'
 }));
 
 
-router.use('/order', proxy("http://localhost:5003",{
+router.use('/order', proxy(env.ORDER_SERVICE_URL,{
     proxyReqPathResolver: (req)=> '/'
 }));
 
-router.use('/order', proxy("http://localhost:5004",{
+router.use('/payment', proxy(env.PAYMENT_SERVICE_URL,{
     proxyReqPathResolver: (req)=> '/'
 }));
 
-router.use('/order', proxy("http://localhost:5005",{
+router.use('/product', proxy(env.PRODUCT_SERVICE_URL,{
     proxyReqPathResolver: (req)=> '/'
 }));
 

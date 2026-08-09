@@ -1,17 +1,20 @@
 import { createApp } from "./app";
+import { ENV as env } from "./config/env";;
+import { logger } from "./config/logger";
 
-import router from "./routes/proxy.routes";
+const app = createApp();
 
-const app= createApp();
-
-app.use('/',router);
-
-app.use('/',(req,res)=>{
-    res.json("Hello from api-getway");
+const server = app.listen(env.API_GATEWAY_PORT, () => {
+  logger.info(`API Gateway listening on port ${env.API_GATEWAY_PORT}`);
 });
 
-app.listen(5000,()=>{
-    console.log('System is running on server port: 5000');
-});
+const shutdown = (signal: string) => {
+  logger.info(`Received ${signal}, shutting down gracefully...`);
+  server.close(() => {
+    logger.info("Shutdown complete");
+    process.exit(0);
+  });
+};
 
-
+process.on("SIGINT", () => shutdown("SIGINT"));
+process.on("SIGTERM", () => shutdown("SIGTERM"));
