@@ -1,8 +1,8 @@
-import { kafkaClient } from '@fujibeauty/kafka-client';
+import { KafkaClient } from "@fujibeauty/kafka-client";
 import { env } from './env';
 
-export const kafka= new kafkaClient({
+export const kafka= new KafkaClient({
     clientId: env.KAFKA_CLIENT_ID,
-    brokers: env.KAFKA_BROKERS
+    brokers: env.KAFKA_BROKERS.split(","),
 });
 
