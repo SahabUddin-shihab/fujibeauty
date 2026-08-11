@@ -12,4 +12,4 @@ const envSchema = z.object({
   NOTIFICATION_SERVICE_URL: z.string().url().default("http://localhost:4002"),
 });
 
-export const ENV= loadConfig(envSchema); 
+export const env= loadConfig(envSchema); 

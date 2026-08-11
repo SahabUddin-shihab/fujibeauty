@@ -1,28 +1,42 @@
-import { Router } from "express"
-import proxy from "express-http-proxy";
-import { ENV as env } from "@/config/env";
+import { Router } from "express";
+import  proxy  from "express-http-proxy";
+import { env } from "../config/env";
 
-const router= Router();
+const router = Router();
 
-router.use('/auth',proxy(env.AUTH_SERVICE_URL, {
-    proxyReqPathResolver: (req)=> '/'
-}));
+router.use(
+  "/auth",
+  proxy(env.AUTH_SERVICE_URL, {
+    proxyReqPathResolver: (req) => `/api/v1/auth${req.url}`,
+  })
+);
 
-router.use('/notification', proxy(env.NOTIFICATION_SERVICE_URL, {
-    proxyReqPathResolver: (req)=> '/'
-}));
+router.use(
+  "/products",
+  proxy(env.PRODUCT_SERVICE_URL, {
+    proxyReqPathResolver: (req) => `/api/v1/products${req.url}`,
+  })
+);
 
+router.use(
+  "/categories",
+  proxy(env.PRODUCT_SERVICE_URL, {
+    proxyReqPathResolver: (req) => `/api/v1/categories${req.url}`,
+  })
+);
 
-router.use('/order', proxy(env.ORDER_SERVICE_URL,{
-    proxyReqPathResolver: (req)=> '/'
-}));
+router.use(
+  "/orders",
+  proxy(env.ORDER_SERVICE_URL, {
+    proxyReqPathResolver: (req) => `/api/v1/orders${req.url}`,
+  })
+);
 
-router.use('/payment', proxy(env.PAYMENT_SERVICE_URL,{
-    proxyReqPathResolver: (req)=> '/'
-}));
-
-router.use('/product', proxy(env.PRODUCT_SERVICE_URL,{
-    proxyReqPathResolver: (req)=> '/'
-}));
+router.use(
+  "/payments",
+  proxy(env.PAYMENT_SERVICE_URL, {
+    proxyReqPathResolver: (req) => `/api/v1/payments${req.url}`,
+  })
+);
 
 export default router;
