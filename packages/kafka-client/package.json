@@ -1,5 +1,5 @@
 {
-  "name": "kafka-client",
+  "name": "@fujibeauty/kafka-client",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.ts",

@@ -7,7 +7,12 @@ export function createApp(): Application {
     const app= express();
     app.use(cors());
     app.use(helmet());
+    app.use(express.json());
+    app.use(express.urlencoded({ extended: true }));
 
+    app.use('/',(req,res)=>{
+        res.json('Response from order-service');
+    });
 
     return app;
 }

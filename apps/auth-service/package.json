@@ -8,9 +8,9 @@
     "dev": "tsx watch src/server.ts"
   },
   "devDependencies": {
-    "@fujibeauty/logger": "1.0.0",
     "@types/cors": "^2.8.19",
     "@types/express": "^5.0.6",
+    "@types/helmet": "^0.0.48",
     "@types/node": "^26.2.0",
     "tsx": "^4.23.11",
     "typescript": "^6.0.3"
@@ -19,9 +19,16 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@types/helmet": "^0.0.48",
+    "@fujibeauty/config": "1.0.0",
+    "@fujibeauty/database": "1.0.0",
+    "@fujibeauty/kafka-client": "1.0.0",
+    "@fujibeauty/logger": "1.0.0",
+    "@fujibeauty/shared-types": "1.0.0",
+    "@fujibeauty/utils": "1.0.0",
     "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
     "express": "^5.2.1",
-    "helmet": "^8.3.0"
+    "helmet": "^8.3.0",
+    "zod": "^4.4.3"
   }
 }
