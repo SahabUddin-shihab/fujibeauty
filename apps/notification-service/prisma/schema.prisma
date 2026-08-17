@@ -1,0 +1,28 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("NOTIFICATION_DATABASE_URL")
+}
+
+model EmailLog {
+  id       String            @id @default(uuid())
+  to       String
+  subject  String
+  template String
+  status   EmailDeliveryStatus @default(SENT)
+  error    String?
+
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@index([to])
+  @@map("email_logs")
+}
+
+enum EmailDeliveryStatus {
+  SENT
+  FAILED
+}

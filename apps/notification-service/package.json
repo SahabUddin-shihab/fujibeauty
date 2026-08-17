@@ -1,25 +1,45 @@
 {
   "name": "notification-service",
   "version": "1.0.0",
-  "description": "",
-  "main": "src/server.ts",
-  "type": "module",
+  "private": true,
+  "main": "dist/server.js",
   "scripts": {
-    
+    "prisma:generate": "prisma generate",
+    "build": "npm run prisma:generate && tsc",
+    "dev": "nodemon --exec ts-node src/server.ts",
+    "start": "node dist/server.js",
+    "prisma:migrate": "prisma migrate dev",
+    "prisma:deploy": "prisma migrate deploy",
+    "prisma:studio": "prisma studio",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@fujibeauty/config": "*",
+    "@fujibeauty/kafka-client": "*",
+    "@fujibeauty/logger": "*",
+    "@fujibeauty/shared-types": "*",
+    "@fujibeauty/utils": "*",
+    "@prisma/client": "^5.20.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "helmet": "^7.1.0",
+    "nodemailer": "^6.9.15",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
-    "@types/cors": "^2.8.19",
-    "@types/express": "^5.0.6",
-    "@types/helmet": "^0.0.48",
-    "@types/node": "^26.2.0",
-    "tsx": "^4.23.11"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "cors": "^2.8.6",
-    "express": "^5.2.1",
-    "helmet": "^8.3.0"
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/jest": "^29.5.13",
+    "@types/nodemailer": "^6.4.16",
+    "@types/node": "^22.7.5",
+    "@types/supertest": "^6.0.2",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.7",
+    "prisma": "^5.20.0",
+    "supertest": "^7.0.0",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
   }
 }
