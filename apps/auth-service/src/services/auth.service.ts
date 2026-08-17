@@ -18,7 +18,9 @@ export interface AuthTokens {
 }
 
 export class AuthService {
+
   async register(input: RegisterInput) {
+
     const existingUser = await userRepository.findByEmail(input.email);
     if (existingUser) {
       throw new ConflictError("An account with this email already exists");
@@ -91,7 +93,8 @@ export class AuthService {
     }
   }
 
-  private async issueTokens(userId: string, email: string, role: string): Promise<AuthTokens> {
+  private async issueTokens(userId: string, email: string, role: string): Promise<AuthTokens> 
+  {
     const accessToken = generateAccessToken({ sub: userId, email, role });
     const refreshToken = generateRefreshToken();
 

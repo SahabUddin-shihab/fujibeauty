@@ -15,6 +15,7 @@ export class UserEventsProducer {
         data: { name: event.name },
       };
       await kafkaClient.publish(KafkaTopics.EMAIL_REQUESTED, { ...welcomeEmail }, event.userId);
+      
     } catch (error) {
       logger.error("Failed to publish user.registered event", { error, userId: event.userId });
     }

@@ -4,3 +4,20 @@
 [2026-08-17 07:54:20] [auth-service] [32minfo[39m: Connected to Kafka
 [2026-08-17 07:54:20] [auth-service] [32minfo[39m: Auth service listening on port 4001
 [2026-08-17 07:54:20] [auth-service] [32minfo[39m: Swagger docs available at http://localhost:4001/api-docs
+[2026-08-17 07:55:57] [auth-service] [32minfo[39m: Connected to PostgreSQL
+[2026-08-17 07:55:57] [auth-service] [32minfo[39m: Connected to Kafka
+[2026-08-17 07:55:57] [auth-service] [32minfo[39m: Auth service listening on port 4001
+[2026-08-17 07:55:57] [auth-service] [32minfo[39m: Swagger docs available at http://localhost:4001/api-docs
+[2026-08-17 07:56:53] [auth-service] [32minfo[39m: New user registered {"userId":"333c924c-02df-440a-9229-722ff81f9283","email":"ada@example.com"}
+[2026-08-17 08:10:24] [auth-service] [32minfo[39m: Connected to PostgreSQL
+[2026-08-17 08:10:24] [auth-service] [32minfo[39m: Connected to Kafka
+[2026-08-17 08:10:24] [auth-service] [32minfo[39m: Auth service listening on port 4001
+[2026-08-17 08:10:24] [auth-service] [32minfo[39m: Swagger docs available at http://localhost:4001/api-docs
+[2026-08-17 08:29:47] [auth-service] [32minfo[39m: Connected to PostgreSQL
+[2026-08-17 08:29:47] [auth-service] [32minfo[39m: Connected to Kafka
+[2026-08-17 08:29:47] [auth-service] [32minfo[39m: Auth service listening on port 4001
+[2026-08-17 08:29:47] [auth-service] [32minfo[39m: Swagger docs available at http://localhost:4001/api-docs
+[2026-08-17 08:31:11] [auth-service] [32minfo[39m: Connected to PostgreSQL
+[2026-08-17 08:31:11] [auth-service] [32minfo[39m: Connected to Kafka
+[2026-08-17 08:31:11] [auth-service] [32minfo[39m: Auth service listening on port 4001
+[2026-08-17 08:31:11] [auth-service] [32minfo[39m: Swagger docs available at http://localhost:4001/api-docs
