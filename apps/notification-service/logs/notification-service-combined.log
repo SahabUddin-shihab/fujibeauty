@@ -14,3 +14,9 @@
 [2026-08-17 13:04:20] [notification-service] [32minfo[39m: Notification service listening on port 4005
 [2026-08-17 13:17:43] [notification-service] [32minfo[39m: Received SIGINT, shutting down gracefully...
 [2026-08-17 13:17:43] [notification-service] [32minfo[39m: Shutdown complete
+[2026-08-17 13:17:59] [notification-service] [32minfo[39m: Using SMTP mailer
+[2026-08-17 13:17:59] [notification-service] [32minfo[39m: Connected to PostgreSQL
+[2026-08-17 13:18:12] [notification-service] [32minfo[39m: Subscribed to email.requested events
+[2026-08-17 13:18:12] [notification-service] [32minfo[39m: Notification service listening on port 4005
+[2026-08-17 13:20:46] [notification-service] [32minfo[39m: Received email.requested event {"to":"bebec82816@ittiv.com","template":"welcome"}
+[2026-08-17 13:20:50] [notification-service] [32minfo[39m: Email sent to bebec82816@ittiv.com {"subject":"Welcome to our store!"}

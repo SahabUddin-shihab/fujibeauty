@@ -57,3 +57,5 @@
 [2026-08-17 12:47:03] [api-gateway] [32minfo[39m: API Gateway listening on port 4000
 [2026-08-17 12:48:30] [api-gateway] [32minfo[39m: POST /api/v1/auth/register
 [2026-08-17 13:17:43] [api-gateway] [32minfo[39m: Received SIGINT, shutting down gracefully...
+[2026-08-17 13:17:57] [api-gateway] [32minfo[39m: API Gateway listening on port 4000
+[2026-08-17 13:20:45] [api-gateway] [32minfo[39m: POST /api/v1/auth/register

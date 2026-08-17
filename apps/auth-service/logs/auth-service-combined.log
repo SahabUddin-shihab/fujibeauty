@@ -71,3 +71,8 @@
 [2026-08-17 12:48:31] [auth-service] [32minfo[39m: New user registered {"userId":"77987e8c-269f-4e1c-b010-abb880fa14a5","email":"fajek21697@joystill.com"}
 [2026-08-17 13:17:43] [auth-service] [32minfo[39m: Received SIGINT, shutting down gracefully...
 [2026-08-17 13:17:43] [auth-service] [32minfo[39m: Shutdown complete
+[2026-08-17 13:17:59] [auth-service] [32minfo[39m: Connected to PostgreSQL
+[2026-08-17 13:17:59] [auth-service] [32minfo[39m: Connected to Kafka
+[2026-08-17 13:17:59] [auth-service] [32minfo[39m: Auth service listening on port 4001
+[2026-08-17 13:17:59] [auth-service] [32minfo[39m: Swagger docs available at http://localhost:4001/api-docs
+[2026-08-17 13:20:46] [auth-service] [32minfo[39m: New user registered {"userId":"84465d1f-c8c5-4076-bdff-a06a3d597a55","email":"bebec82816@ittiv.com"}
