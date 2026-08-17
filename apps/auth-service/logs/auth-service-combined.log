@@ -25,3 +25,49 @@
 [2026-08-17 09:04:40] [auth-service] [32minfo[39m: Connected to Kafka
 [2026-08-17 09:04:40] [auth-service] [32minfo[39m: Auth service listening on port 4001
 [2026-08-17 09:04:40] [auth-service] [32minfo[39m: Swagger docs available at http://localhost:4001/api-docs
+[2026-08-17 10:34:25] [auth-service] [32minfo[39m: Connected to PostgreSQL
+[2026-08-17 10:34:25] [auth-service] [32minfo[39m: Connected to Kafka
+[2026-08-17 10:34:25] [auth-service] [32minfo[39m: Auth service listening on port 4001
+[2026-08-17 10:34:25] [auth-service] [32minfo[39m: Swagger docs available at http://localhost:4001/api-docs
+[2026-08-17 11:38:22] [auth-service] [32minfo[39m: Received SIGINT, shutting down gracefully...
+[2026-08-17 11:38:22] [auth-service] [32minfo[39m: Shutdown complete
+[2026-08-17 12:12:11] [auth-service] [32minfo[39m: Connected to PostgreSQL
+[2026-08-17 12:12:11] [auth-service] [32minfo[39m: Connected to Kafka
+[2026-08-17 12:12:11] [auth-service] [32minfo[39m: Auth service listening on port 4001
+[2026-08-17 12:12:11] [auth-service] [32minfo[39m: Swagger docs available at http://localhost:4001/api-docs
+[2026-08-17 12:14:53] [auth-service] [32minfo[39m: New user registered {"userId":"f7689dcc-4d4b-44e5-b8d4-1bf0c267558c","email":"pobefek875@joystill.com"}
+[2026-08-17 12:17:55] [auth-service] [32minfo[39m: New user registered {"userId":"7dbb62dc-9f0a-46c2-aa35-7adec6a44e73","email":"pobefek8754@joystill.com"}
+[2026-08-17 12:20:19] [auth-service] [32minfo[39m: Received SIGINT, shutting down gracefully...
+[2026-08-17 12:20:19] [auth-service] [32minfo[39m: Shutdown complete
+[2026-08-17 12:20:39] [auth-service] [32minfo[39m: Connected to PostgreSQL
+[2026-08-17 12:20:39] [auth-service] [32minfo[39m: Connected to Kafka
+[2026-08-17 12:20:39] [auth-service] [32minfo[39m: Auth service listening on port 4001
+[2026-08-17 12:20:39] [auth-service] [32minfo[39m: Swagger docs available at http://localhost:4001/api-docs
+[2026-08-17 12:26:21] [auth-service] [32minfo[39m: Received SIGINT, shutting down gracefully...
+[2026-08-17 12:26:21] [auth-service] [32minfo[39m: Shutdown complete
+[2026-08-17 12:27:25] [auth-service] [32minfo[39m: Connected to PostgreSQL
+[2026-08-17 12:27:25] [auth-service] [32minfo[39m: Connected to Kafka
+[2026-08-17 12:27:25] [auth-service] [32minfo[39m: Auth service listening on port 4001
+[2026-08-17 12:27:25] [auth-service] [32minfo[39m: Swagger docs available at http://localhost:4001/api-docs
+[2026-08-17 12:27:45] [auth-service] [32minfo[39m: Received SIGINT, shutting down gracefully...
+[2026-08-17 12:27:45] [auth-service] [32minfo[39m: Shutdown complete
+[2026-08-17 12:28:04] [auth-service] [32minfo[39m: Connected to PostgreSQL
+[2026-08-17 12:28:04] [auth-service] [32minfo[39m: Connected to Kafka
+[2026-08-17 12:28:04] [auth-service] [32minfo[39m: Auth service listening on port 4001
+[2026-08-17 12:28:04] [auth-service] [32minfo[39m: Swagger docs available at http://localhost:4001/api-docs
+[2026-08-17 12:33:56] [auth-service] [32minfo[39m: Received SIGINT, shutting down gracefully...
+[2026-08-17 12:33:56] [auth-service] [32minfo[39m: Shutdown complete
+[2026-08-17 12:34:46] [auth-service] [32minfo[39m: Connected to PostgreSQL
+[2026-08-17 12:34:46] [auth-service] [32minfo[39m: Connected to Kafka
+[2026-08-17 12:34:46] [auth-service] [32minfo[39m: Auth service listening on port 4001
+[2026-08-17 12:34:46] [auth-service] [32minfo[39m: Swagger docs available at http://localhost:4001/api-docs
+[2026-08-17 12:35:31] [auth-service] [32minfo[39m: New user registered {"userId":"504e9f99-6cb9-4182-ad00-f7001e2c6ecd","email":"hosomin530@ittiv.com"}
+[2026-08-17 12:46:42] [auth-service] [32minfo[39m: Received SIGINT, shutting down gracefully...
+[2026-08-17 12:46:42] [auth-service] [32minfo[39m: Shutdown complete
+[2026-08-17 12:47:07] [auth-service] [32minfo[39m: Connected to PostgreSQL
+[2026-08-17 12:47:07] [auth-service] [32minfo[39m: Connected to Kafka
+[2026-08-17 12:47:07] [auth-service] [32minfo[39m: Auth service listening on port 4001
+[2026-08-17 12:47:07] [auth-service] [32minfo[39m: Swagger docs available at http://localhost:4001/api-docs
+[2026-08-17 12:48:31] [auth-service] [32minfo[39m: New user registered {"userId":"77987e8c-269f-4e1c-b010-abb880fa14a5","email":"fajek21697@joystill.com"}
+[2026-08-17 13:17:43] [auth-service] [32minfo[39m: Received SIGINT, shutting down gracefully...
+[2026-08-17 13:17:43] [auth-service] [32minfo[39m: Shutdown complete

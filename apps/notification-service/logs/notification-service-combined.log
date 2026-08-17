@@ -1,0 +1,16 @@
+[2026-08-17 12:34:35] [notification-service] [32minfo[39m: Connected to PostgreSQL
+[2026-08-17 12:34:35] [notification-service] [32minfo[39m: Notification service listening on port 4005
+[2026-08-17 12:46:14] [notification-service] [32minfo[39m: Connected to PostgreSQL
+[2026-08-17 12:46:14] [notification-service] [32minfo[39m: Notification service listening on port 4005
+[2026-08-17 12:46:23] [notification-service] [32minfo[39m: Connected to PostgreSQL
+[2026-08-17 12:46:23] [notification-service] [32minfo[39m: Notification service listening on port 4005
+[2026-08-17 12:46:42] [notification-service] [32minfo[39m: Received SIGINT, shutting down gracefully...
+[2026-08-17 12:46:42] [notification-service] [32minfo[39m: Shutdown complete
+[2026-08-17 12:47:02] [notification-service] [32minfo[39m: Connected to PostgreSQL
+[2026-08-17 12:47:02] [notification-service] [32minfo[39m: Notification service listening on port 4005
+[2026-08-17 13:04:14] [notification-service] [32minfo[39m: Using mock mailer (set EMAIL_PROVIDER=smtp for real delivery)
+[2026-08-17 13:04:14] [notification-service] [32minfo[39m: Connected to PostgreSQL
+[2026-08-17 13:04:20] [notification-service] [32minfo[39m: Subscribed to email.requested events
+[2026-08-17 13:04:20] [notification-service] [32minfo[39m: Notification service listening on port 4005
+[2026-08-17 13:17:43] [notification-service] [32minfo[39m: Received SIGINT, shutting down gracefully...
+[2026-08-17 13:17:43] [notification-service] [32minfo[39m: Shutdown complete

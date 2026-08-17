@@ -37,3 +37,23 @@
 [2026-08-17 07:58:41] [api-gateway] [32minfo[39m: POST /api/v1/auth/refresh-token
 [2026-08-17 07:58:50] [api-gateway] [32minfo[39m: POST /api/v1/auth/logout
 [2026-08-17 07:58:57] [api-gateway] [32minfo[39m: POST /api/v1/auth/login
+[2026-08-17 10:27:02] [api-gateway] [32minfo[39m: POST /api/v1/auth/login
+[2026-08-17 11:38:22] [api-gateway] [32minfo[39m: Received SIGINT, shutting down gracefully...
+[2026-08-17 12:12:08] [api-gateway] [32minfo[39m: API Gateway listening on port 4000
+[2026-08-17 12:14:52] [api-gateway] [32minfo[39m: POST /api/v1/auth/register
+[2026-08-17 12:17:49] [api-gateway] [32minfo[39m: POST /api/v1/auth/register
+[2026-08-17 12:17:55] [api-gateway] [32minfo[39m: POST /api/v1/auth/register
+[2026-08-17 12:20:19] [api-gateway] [32minfo[39m: Received SIGINT, shutting down gracefully...
+[2026-08-17 12:20:37] [api-gateway] [32minfo[39m: API Gateway listening on port 4000
+[2026-08-17 12:25:48] [api-gateway] [32minfo[39m: API Gateway listening on port 4000
+[2026-08-17 12:26:21] [api-gateway] [32minfo[39m: Received SIGINT, shutting down gracefully...
+[2026-08-17 12:27:22] [api-gateway] [32minfo[39m: API Gateway listening on port 4000
+[2026-08-17 12:27:45] [api-gateway] [32minfo[39m: Received SIGINT, shutting down gracefully...
+[2026-08-17 12:28:02] [api-gateway] [32minfo[39m: API Gateway listening on port 4000
+[2026-08-17 12:33:56] [api-gateway] [32minfo[39m: Received SIGINT, shutting down gracefully...
+[2026-08-17 12:34:38] [api-gateway] [32minfo[39m: API Gateway listening on port 4000
+[2026-08-17 12:35:31] [api-gateway] [32minfo[39m: POST /api/v1/auth/register
+[2026-08-17 12:46:42] [api-gateway] [32minfo[39m: Received SIGINT, shutting down gracefully...
+[2026-08-17 12:47:03] [api-gateway] [32minfo[39m: API Gateway listening on port 4000
+[2026-08-17 12:48:30] [api-gateway] [32minfo[39m: POST /api/v1/auth/register
+[2026-08-17 13:17:43] [api-gateway] [32minfo[39m: Received SIGINT, shutting down gracefully...
