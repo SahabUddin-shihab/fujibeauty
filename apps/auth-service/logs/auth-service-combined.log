@@ -21,3 +21,7 @@
 [2026-08-17 08:31:11] [auth-service] [32minfo[39m: Connected to Kafka
 [2026-08-17 08:31:11] [auth-service] [32minfo[39m: Auth service listening on port 4001
 [2026-08-17 08:31:11] [auth-service] [32minfo[39m: Swagger docs available at http://localhost:4001/api-docs
+[2026-08-17 09:04:40] [auth-service] [32minfo[39m: Connected to PostgreSQL
+[2026-08-17 09:04:40] [auth-service] [32minfo[39m: Connected to Kafka
+[2026-08-17 09:04:40] [auth-service] [32minfo[39m: Auth service listening on port 4001
+[2026-08-17 09:04:40] [auth-service] [32minfo[39m: Swagger docs available at http://localhost:4001/api-docs
