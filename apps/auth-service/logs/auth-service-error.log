@@ -1,0 +1,2 @@
+[2026-08-17 07:48:28] [auth-service] [31merror[39m: Failed to start auth-service {"error":{"name":"PrismaClientInitializationError","clientVersion":"5.22.0","errorCode":"P1003"}}
+[2026-08-17 07:53:46] [auth-service] [31merror[39m: Failed to start auth-service {"error":{"name":"PrismaClientInitializationError","clientVersion":"5.22.0","errorCode":"P1003"}}

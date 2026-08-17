@@ -1,3 +1,29 @@
-[2026-08-09 19:06:14] [api-gateway] [32minfo[39m: API Gateway listening on port 4000
-[2026-08-09 19:07:03] [api-gateway] [32minfo[39m: API Gateway listening on port 4000
-[2026-08-09 19:07:06] [api-gateway] [32minfo[39m: API Gateway listening on port 4000
+[2026-08-16 12:22:45] [api-gateway] [32minfo[39m: API Gateway listening on port 4000
+[2026-08-16 12:22:52] [api-gateway] [32minfo[39m: API Gateway listening on port 4000
+[2026-08-16 12:24:42] [api-gateway] [32minfo[39m: POST /api/v1/auth
+[2026-08-16 12:24:56] [api-gateway] [32minfo[39m: API Gateway listening on port 4000
+[2026-08-16 13:39:44] [api-gateway] [32minfo[39m: POST /api/v1/auth
+[2026-08-16 13:40:22] [api-gateway] [32minfo[39m: POST /api/v1/auth
+[2026-08-16 13:43:13] [api-gateway] [32minfo[39m: POST /api/v1/auth
+[2026-08-16 13:43:29] [api-gateway] [32minfo[39m: API Gateway listening on port 4000
+[2026-08-16 13:43:38] [api-gateway] [32minfo[39m: API Gateway listening on port 4000
+[2026-08-16 13:43:40] [api-gateway] [32minfo[39m: POST /api/v1/auth
+[2026-08-16 13:43:52] [api-gateway] [32minfo[39m: API Gateway listening on port 4000
+[2026-08-16 13:44:04] [api-gateway] [32minfo[39m: API Gateway listening on port 4000
+[2026-08-16 14:08:17] [api-gateway] [32minfo[39m: POST /api/v1/auth
+[2026-08-16 14:21:26] [api-gateway] [32minfo[39m: POST /api/v1/auth
+[2026-08-16 15:03:33] [api-gateway] [32minfo[39m: API Gateway listening on port 4000
+[2026-08-16 23:39:37] [api-gateway] [32minfo[39m: POST /api/v1/auth
+[2026-08-17 00:57:25] [api-gateway] [32minfo[39m: POST /api/v1/auth
+[2026-08-17 00:58:14] [api-gateway] [32minfo[39m: POST /api/v1/auth
+[2026-08-17 00:58:51] [api-gateway] [32minfo[39m: API Gateway listening on port 4000
+[2026-08-17 00:58:52] [api-gateway] [32minfo[39m: POST /api/v1/auth
+[2026-08-17 00:58:54] [api-gateway] [32minfo[39m: POST /api/v1/auth
+[2026-08-17 00:59:06] [api-gateway] [32minfo[39m: API Gateway listening on port 4000
+[2026-08-17 01:06:54] [api-gateway] [32minfo[39m: POST /api/v1/auth/login
+[2026-08-17 07:07:31] [api-gateway] [32minfo[39m: API Gateway listening on port 4000
+[2026-08-17 07:24:51] [api-gateway] [32minfo[39m: Received SIGINT, shutting down gracefully...
+[2026-08-17 07:26:35] [api-gateway] [32minfo[39m: API Gateway listening on port 4000
+[2026-08-17 07:28:00] [api-gateway] [32minfo[39m: Received SIGINT, shutting down gracefully...
+[2026-08-17 07:28:16] [api-gateway] [32minfo[39m: API Gateway listening on port 4000
+[2026-08-17 07:47:47] [api-gateway] [32minfo[39m: Received SIGINT, shutting down gracefully...
