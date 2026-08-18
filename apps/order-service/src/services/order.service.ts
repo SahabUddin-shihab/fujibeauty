@@ -1,9 +1,9 @@
-import { AppError, ForbiddenError, NotFoundError } from "@ecommerce-ai/utils";
+import { AppError, ForbiddenError, NotFoundError } from "@fujibeauty/utils";
 import { OrderRepository } from "../repositories/order.repository";
 import { OrderEventsProducer } from "../producers/order-events.producer";
 import { getProductById, reserveStock, releaseStock } from "../utils/product-client";
 import { CreateOrderInput } from "../validators/order.validator";
-import { AuthenticatedUser } from "@ecommerce-ai/shared-types";
+import { AuthenticatedUser } from "@fujibeauty/shared-types";
 import { env } from "../config/env";
 import { logger } from "../config/logger";
 
