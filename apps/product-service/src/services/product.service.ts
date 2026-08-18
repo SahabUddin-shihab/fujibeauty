@@ -1,12 +1,12 @@
 import slugify from "slugify";
-import { ConflictError, ForbiddenError, NotFoundError } from "@ecommerce-ai/utils";
+import { ConflictError, ForbiddenError, NotFoundError } from "@fujibeauty/utils";
 import { ProductRepository, ProductListFilters } from "../repositories/product.repository";
 import { CategoryRepository } from "../repositories/category.repository";
 import { ProductEventsProducer } from "../producers/product-events.producer";
 import { CreateProductInput, UpdateProductInput } from "../validators/product.validator";
 import { redis, PRODUCT_CACHE_TTL_SECONDS } from "../config/redis";
 import { logger } from "../config/logger";
-import { AuthenticatedUser } from "@ecommerce-ai/shared-types";
+import { AuthenticatedUser } from "@fujibeauty/shared-types";
 
 const productRepository = new ProductRepository();
 const categoryRepository = new CategoryRepository();

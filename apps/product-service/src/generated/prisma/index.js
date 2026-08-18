@@ -141,7 +141,7 @@ const config = {
       "value": "prisma-client-js"
     },
     "output": {
-      "value": "D:\\work space\\node\\ecommerce-ai\\apps\\product-service\\src\\generated\\prisma",
+      "value": "D:\\work space\\node\\fujibeauty\\apps\\product-service\\src\\generated\\prisma",
       "fromEnvVar": null
     },
     "config": {
@@ -155,7 +155,7 @@ const config = {
       }
     ],
     "previewFeatures": [],
-    "sourceFilePath": "D:\\work space\\node\\ecommerce-ai\\apps\\product-service\\prisma\\schema.prisma",
+    "sourceFilePath": "D:\\work space\\node\\fujibeauty\\apps\\product-service\\prisma\\schema.prisma",
     "isCustomOutput": true
   },
   "relativeEnvPaths": {

@@ -17,7 +17,7 @@
 [2026-08-04 09:17:17] [product-service] [32minfo[39m: Swagger docs available at http://localhost:4002/api-docs
 [2026-08-04 09:19:17] [product-service] [31merror[39m: PrismaClientValidationError: 
 Invalid `prisma.product.findMany()` invocation in
-D:\work space\node\ecommerce-ai\apps\product-service\src\repositories\product.repository.ts:22:22
+D:\work space\node\fujibeauty\apps\product-service\src\repositories\product.repository.ts:22:22
 
   19 };
   20 
@@ -38,12 +38,12 @@ D:\work space\node\ecommerce-ai\apps\product-service\src\repositories\product.re
        })
 
 Argument `take`: Invalid value provided. Expected Int, provided String.
-    at wn (D:\work space\node\ecommerce-ai\apps\product-service\src\generated\prisma\runtime\library.js:29:1363)
-    at $n.handleRequestError (D:\work space\node\ecommerce-ai\apps\product-service\src\generated\prisma\runtime\library.js:121:6958)
-    at $n.handleAndLogRequestError (D:\work space\node\ecommerce-ai\apps\product-service\src\generated\prisma\runtime\library.js:121:6623)
-    at $n.request (D:\work space\node\ecommerce-ai\apps\product-service\src\generated\prisma\runtime\library.js:121:6307)
-    at async l (D:\work space\node\ecommerce-ai\apps\product-service\src\generated\prisma\runtime\library.js:130:9633)
+    at wn (D:\work space\node\fujibeauty\apps\product-service\src\generated\prisma\runtime\library.js:29:1363)
+    at $n.handleRequestError (D:\work space\node\fujibeauty\apps\product-service\src\generated\prisma\runtime\library.js:121:6958)
+    at $n.handleAndLogRequestError (D:\work space\node\fujibeauty\apps\product-service\src\generated\prisma\runtime\library.js:121:6623)
+    at $n.request (D:\work space\node\fujibeauty\apps\product-service\src\generated\prisma\runtime\library.js:121:6307)
+    at async l (D:\work space\node\fujibeauty\apps\product-service\src\generated\prisma\runtime\library.js:130:9633)
     at async Promise.all (index 0)
-    at async ProductRepository.findMany (D:\work space\node\ecommerce-ai\apps\product-service\src\repositories\product.repository.ts:21:31)
-    at async ProductService.list (D:\work space\node\ecommerce-ai\apps\product-service\src\services\product.service.ts:64:20)
-    at async D:\work space\node\ecommerce-ai\apps\product-service\src\controllers\product.controller.ts:20:18 {"path":"/api/v1/products/"}
+    at async ProductRepository.findMany (D:\work space\node\fujibeauty\apps\product-service\src\repositories\product.repository.ts:21:31)
+    at async ProductService.list (D:\work space\node\fujibeauty\apps\product-service\src\services\product.service.ts:64:20)
+    at async D:\work space\node\fujibeauty\apps\product-service\src\controllers\product.controller.ts:20:18 {"path":"/api/v1/products/"}

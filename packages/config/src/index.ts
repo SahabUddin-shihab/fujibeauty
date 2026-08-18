@@ -21,5 +21,5 @@ export const commonEnvSchema = z.object({
   REDIS_HOST: z.string().default("localhost"),
   REDIS_PORT: z.coerce.number().default(6379),
   KAFKA_BROKERS: z.string().default("localhost:9092"),
-  KAFKA_CLIENT_ID: z.string().default("ecommerce-ai"),
+  KAFKA_CLIENT_ID: z.string().default("fujibeauty"),
 });

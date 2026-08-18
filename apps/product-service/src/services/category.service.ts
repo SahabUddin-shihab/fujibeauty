@@ -1,5 +1,5 @@
 import slugify from "slugify";
-import { ConflictError } from "@ecommerce-ai/utils";
+import { ConflictError } from "@fujibeauty/utils";
 import { CategoryRepository } from "../repositories/category.repository";
 
 const categoryRepository = new CategoryRepository();

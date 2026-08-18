@@ -6,24 +6,8 @@ import { createCategorySchema } from "../validators/product.validator";
 
 const router = Router();
 
-/**
- * @openapi
- * /categories:
- *   get:
- *     summary: List all categories
- *     tags: [Categories]
- */
 router.get("/", categoryController.listCategories);
 
-/**
- * @openapi
- * /categories:
- *   post:
- *     summary: Create a category (admin only)
- *     tags: [Categories]
- *     security:
- *       - bearerAuth: []
- */
 router.post("/", authenticate, authorize("ADMIN"), validate(createCategorySchema), categoryController.createCategory);
 
 export default router;

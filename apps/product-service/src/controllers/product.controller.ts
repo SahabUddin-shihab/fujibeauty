@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { asyncHandler, sendSuccess, UnauthorizedError } from "@ecommerce-ai/utils";
+import { asyncHandler, sendSuccess, UnauthorizedError } from "@fujibeauty/utils";
 import { ProductService } from "../services/product.service";
 
 const productService = new ProductService();

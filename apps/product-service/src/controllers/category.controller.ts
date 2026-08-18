@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { asyncHandler, sendSuccess } from "@ecommerce-ai/utils";
+import { asyncHandler, sendSuccess } from "@fujibeauty/utils";
 import { CategoryService } from "../services/category.service";
 
 const categoryService = new CategoryService();
