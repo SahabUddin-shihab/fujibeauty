@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { loadConfig } from "@ecommerce-ai/config";
+import { loadConfig } from "@fujibeauty/config";
 
 const envSchema = z.object({
   NODE_ENV: z.enum(["development", "production", "test"]).default("development"),
