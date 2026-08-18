@@ -15,12 +15,12 @@
     
   },
   "dependencies": {
-    "@fujibeauty/config": "*",
-    "@fujibeauty/database": "*",
-    "@fujibeauty/kafka-client": "*",
-    "@fujibeauty/logger": "*",
-    "@fujibeauty/shared-types": "*",
-    "@fujibeauty/utils": "*",
+    "@ecommerce-ai/config": "*",
+    "@ecommerce-ai/database": "*",
+    "@ecommerce-ai/kafka-client": "*",
+    "@ecommerce-ai/logger": "*",
+    "@ecommerce-ai/shared-types": "*",
+    "@ecommerce-ai/utils": "*",
     "@prisma/client": "^5.20.0",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",

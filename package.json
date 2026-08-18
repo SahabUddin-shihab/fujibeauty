@@ -1,5 +1,5 @@
 {
-  "name": "ecommerce-ai-backend",
+  "name": "fujibeauty",
   "private": true,
   "workspaces": [
     "apps/*",

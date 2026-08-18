@@ -1,0 +1,49 @@
+[2026-08-03 08:53:10] [product-service] [32minfo[39m: Connected to PostgreSQL
+[2026-08-03 08:53:10] [product-service] [32minfo[39m: Connected to Kafka
+[2026-08-03 08:53:10] [product-service] [32minfo[39m: Product service listening on port 4002
+[2026-08-03 08:53:10] [product-service] [32minfo[39m: Swagger docs available at http://localhost:4002/api-docs
+[2026-08-03 08:53:28] [product-service] [32minfo[39m: Received SIGINT, shutting down gracefully...
+[2026-08-03 08:53:28] [product-service] [32minfo[39m: Shutdown complete
+[2026-08-04 08:50:15] [product-service] [31merror[39m: Failed to start product-service {"error":{"name":"PrismaClientInitializationError","clientVersion":"5.22.0","errorCode":"P1001"}}
+[2026-08-04 08:59:54] [product-service] [32minfo[39m: Connected to PostgreSQL
+[2026-08-04 08:59:54] [product-service] [32minfo[39m: Connected to Kafka
+[2026-08-04 08:59:54] [product-service] [32minfo[39m: Product service listening on port 4002
+[2026-08-04 08:59:54] [product-service] [32minfo[39m: Swagger docs available at http://localhost:4002/api-docs
+[2026-08-04 09:16:59] [product-service] [32minfo[39m: Received SIGINT, shutting down gracefully...
+[2026-08-04 09:16:59] [product-service] [32minfo[39m: Shutdown complete
+[2026-08-04 09:17:17] [product-service] [32minfo[39m: Connected to PostgreSQL
+[2026-08-04 09:17:17] [product-service] [32minfo[39m: Connected to Kafka
+[2026-08-04 09:17:17] [product-service] [32minfo[39m: Product service listening on port 4002
+[2026-08-04 09:17:17] [product-service] [32minfo[39m: Swagger docs available at http://localhost:4002/api-docs
+[2026-08-04 09:19:17] [product-service] [31merror[39m: PrismaClientValidationError: 
+Invalid `prisma.product.findMany()` invocation in
+D:\work space\node\ecommerce-ai\apps\product-service\src\repositories\product.repository.ts:22:22
+
+  19 };
+  20 
+  21 const [products, total] = await Promise.all([
+→ 22   prisma.product.findMany({
+         where: {
+           isActive: true
+         },
+         skip: 0,
+         take: "20",
+               ~~~~
+         orderBy: {
+           createdAt: "desc"
+         },
+         include: {
+           category: true
+         }
+       })
+
+Argument `take`: Invalid value provided. Expected Int, provided String.
+    at wn (D:\work space\node\ecommerce-ai\apps\product-service\src\generated\prisma\runtime\library.js:29:1363)
+    at $n.handleRequestError (D:\work space\node\ecommerce-ai\apps\product-service\src\generated\prisma\runtime\library.js:121:6958)
+    at $n.handleAndLogRequestError (D:\work space\node\ecommerce-ai\apps\product-service\src\generated\prisma\runtime\library.js:121:6623)
+    at $n.request (D:\work space\node\ecommerce-ai\apps\product-service\src\generated\prisma\runtime\library.js:121:6307)
+    at async l (D:\work space\node\ecommerce-ai\apps\product-service\src\generated\prisma\runtime\library.js:130:9633)
+    at async Promise.all (index 0)
+    at async ProductRepository.findMany (D:\work space\node\ecommerce-ai\apps\product-service\src\repositories\product.repository.ts:21:31)
+    at async ProductService.list (D:\work space\node\ecommerce-ai\apps\product-service\src\services\product.service.ts:64:20)
+    at async D:\work space\node\ecommerce-ai\apps\product-service\src\controllers\product.controller.ts:20:18 {"path":"/api/v1/products/"}

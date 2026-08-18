@@ -1,18 +1,28 @@
-import express, {Application} from 'express';
-import cors from 'cors';
-import helmet from 'helmet';
+import express, { Application } from "express";
+import cors from "cors";
+import helmet from "helmet";
+import swaggerUi from "swagger-ui-express";
+import routes from "./routes";
+import { swaggerSpec } from "./config/swagger";
+import { errorMiddleware, notFoundMiddleware } from "./middlewares/error.middleware";
 
 export function createApp(): Application {
+  const app = express();
 
-    const app= express();
-    app.use(cors());
-    app.use(helmet());
-    app.use(express.json());
-    app.use(express.urlencoded({ extended: true }));
+  app.use(helmet());
+  app.use(cors());
+  app.use(express.json());
+  app.use(express.urlencoded({ extended: true }));
 
-    app.use('/',(req,res)=>{
-        res.json('Response from product-service');
-    });
+  app.get("/health", (_req, res) => {
+    res.status(200).json({ status: "ok", service: "product-service" });
+  });
 
-    return app;
+  app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+  app.use("/api/v1", routes);
+
+  app.use(notFoundMiddleware);
+  app.use(errorMiddleware);
+
+  return app;
 }
