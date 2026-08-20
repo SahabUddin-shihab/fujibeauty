@@ -1,0 +1,30 @@
+[2026-08-04 08:50:15] [order-service] [31merror[39m: Failed to start order-service {"error":{"name":"PrismaClientInitializationError","clientVersion":"5.22.0","errorCode":"P1001"}}
+[2026-08-04 08:59:53] [order-service] [32minfo[39m: Connected to PostgreSQL
+[2026-08-04 08:59:53] [order-service] [32minfo[39m: Connected to Kafka
+[2026-08-04 08:59:59] [order-service] [32minfo[39m: Subscribed to payment.succeeded events
+[2026-08-04 08:59:59] [order-service] [32minfo[39m: Reservation-expiry job scheduled (*/1 * * * *)
+[2026-08-04 08:59:59] [order-service] [32minfo[39m: Order service listening on port 4003
+[2026-08-04 08:59:59] [order-service] [32minfo[39m: Swagger docs available at http://localhost:4003/api-docs
+[2026-08-04 09:00:00] [order-service] [31merror[39m: Reservation-expiry job failed {"error":{"name":"PrismaClientKnownRequestError","code":"P2021","clientVersion":"5.22.0","meta":{"modelName":"Order","table":"public.orders"}}}
+[2026-08-04 09:01:00] [order-service] [31merror[39m: Reservation-expiry job failed {"error":{"name":"PrismaClientKnownRequestError","code":"P2021","clientVersion":"5.22.0","meta":{"modelName":"Order","table":"public.orders"}}}
+[2026-08-04 09:02:00] [order-service] [31merror[39m: Reservation-expiry job failed {"error":{"name":"PrismaClientKnownRequestError","code":"P2021","clientVersion":"5.22.0","meta":{"modelName":"Order","table":"public.orders"}}}
+[2026-08-04 09:03:00] [order-service] [31merror[39m: Reservation-expiry job failed {"error":{"name":"PrismaClientKnownRequestError","code":"P2021","clientVersion":"5.22.0","meta":{"modelName":"Order","table":"public.orders"}}}
+[2026-08-04 09:04:00] [order-service] [31merror[39m: Reservation-expiry job failed {"error":{"name":"PrismaClientKnownRequestError","code":"P2021","clientVersion":"5.22.0","meta":{"modelName":"Order","table":"public.orders"}}}
+[2026-08-04 09:05:00] [order-service] [31merror[39m: Reservation-expiry job failed {"error":{"name":"PrismaClientKnownRequestError","code":"P2021","clientVersion":"5.22.0","meta":{"modelName":"Order","table":"public.orders"}}}
+[2026-08-04 09:06:00] [order-service] [31merror[39m: Reservation-expiry job failed {"error":{"name":"PrismaClientKnownRequestError","code":"P2021","clientVersion":"5.22.0","meta":{"modelName":"Order","table":"public.orders"}}}
+[2026-08-04 09:07:00] [order-service] [31merror[39m: Reservation-expiry job failed {"error":{"name":"PrismaClientKnownRequestError","code":"P2021","clientVersion":"5.22.0","meta":{"modelName":"Order","table":"public.orders"}}}
+[2026-08-04 09:08:00] [order-service] [31merror[39m: Reservation-expiry job failed {"error":{"name":"PrismaClientKnownRequestError","code":"P2021","clientVersion":"5.22.0","meta":{"modelName":"Order","table":"public.orders"}}}
+[2026-08-04 09:09:00] [order-service] [31merror[39m: Reservation-expiry job failed {"error":{"name":"PrismaClientKnownRequestError","code":"P2021","clientVersion":"5.22.0","meta":{"modelName":"Order","table":"public.orders"}}}
+[2026-08-04 09:10:00] [order-service] [31merror[39m: Reservation-expiry job failed {"error":{"name":"PrismaClientKnownRequestError","code":"P2021","clientVersion":"5.22.0","meta":{"modelName":"Order","table":"public.orders"}}}
+[2026-08-04 09:11:00] [order-service] [31merror[39m: Reservation-expiry job failed {"error":{"name":"PrismaClientKnownRequestError","code":"P2021","clientVersion":"5.22.0","meta":{"modelName":"Order","table":"public.orders"}}}
+[2026-08-04 09:12:00] [order-service] [31merror[39m: Reservation-expiry job failed {"error":{"name":"PrismaClientKnownRequestError","code":"P2021","clientVersion":"5.22.0","meta":{"modelName":"Order","table":"public.orders"}}}
+[2026-08-04 09:13:00] [order-service] [31merror[39m: Reservation-expiry job failed {"error":{"name":"PrismaClientKnownRequestError","code":"P2021","clientVersion":"5.22.0","meta":{"modelName":"Order","table":"public.orders"}}}
+[2026-08-04 09:14:00] [order-service] [31merror[39m: Reservation-expiry job failed {"error":{"name":"PrismaClientKnownRequestError","code":"P2021","clientVersion":"5.22.0","meta":{"modelName":"Order","table":"public.orders"}}}
+[2026-08-04 09:16:59] [order-service] [32minfo[39m: Received SIGINT, shutting down gracefully...
+[2026-08-04 09:16:59] [order-service] [32minfo[39m: Shutdown complete
+[2026-08-04 09:17:17] [order-service] [32minfo[39m: Connected to PostgreSQL
+[2026-08-04 09:17:17] [order-service] [32minfo[39m: Connected to Kafka
+[2026-08-04 09:17:26] [order-service] [32minfo[39m: Subscribed to payment.succeeded events
+[2026-08-04 09:17:26] [order-service] [32minfo[39m: Reservation-expiry job scheduled (*/1 * * * *)
+[2026-08-04 09:17:26] [order-service] [32minfo[39m: Order service listening on port 4003
+[2026-08-04 09:17:26] [order-service] [32minfo[39m: Swagger docs available at http://localhost:4003/api-docs

@@ -6,9 +6,12 @@ import { createOrderSchema, orderIdParamSchema } from "../validators/order.valid
 
 const router = Router();
 
+
 router.post("/", authenticate, validate(createOrderSchema), orderController.createOrder);
 
+
 router.get("/", authenticate, orderController.listMyOrders);
+
 
 router.get("/:id", authenticate, validate(orderIdParamSchema), orderController.getOrder);
 

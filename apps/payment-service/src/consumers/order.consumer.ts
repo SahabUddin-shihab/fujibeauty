@@ -1,4 +1,4 @@
-import { KafkaTopics, OrderCreatedEvent } from "@ecommerce-ai/shared-types";
+import { KafkaTopics, OrderCreatedEvent } from "@fujibeauty/shared-types";
 import { kafkaClient } from "../config/kafka";
 import { logger } from "../config/logger";
 import { PaymentRepository } from "../repositories/payment.repository";

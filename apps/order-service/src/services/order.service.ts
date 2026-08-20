@@ -30,6 +30,7 @@ export class OrderService {
       })
     );
 
+
     const reserved: { productId: string; quantity: number }[] = [];
     try {
       for (const item of resolvedItems) {
@@ -94,6 +95,7 @@ export class OrderService {
     return orderRepository.findByUserId(userId);
   }
 
+  // Called from the payment.succeeded Kafka consumer, not from an HTTP route.
   async confirmAfterPayment(orderId: string) {
     const order = await orderRepository.findById(orderId);
     if (!order) {
@@ -102,7 +104,11 @@ export class OrderService {
     }
 
     if (order.status === "CANCELLED") {
-
+      // The reservation-expiry job already cancelled this order and released
+      // its stock before payment came through. Money changed hands for stock
+      // that's no longer reserved — this needs a refund, which isn't wired
+      // up yet. Flagging loudly rather than silently "confirming" a
+      // cancelled order.
       logger.error("Payment succeeded for an already-cancelled order — needs manual refund review", {
         orderId,
       });
@@ -124,6 +130,9 @@ export class OrderService {
     });
   }
 
+  // Run periodically by the reservation-expiry cron job. Cancels orders that
+  // were never paid within the reservation window and releases their stock
+  // back to product-service so it isn't held forever.
   async expirePendingOrders(): Promise<number> {
     const expiredOrders = await orderRepository.findExpiredPending();
 

@@ -22,8 +22,6 @@ export class OrderRepository {
     return prisma.order.update({ where: { id }, data: { status }, include: { items: true } });
   }
 
-  // Orders still PENDING (never paid) whose stock reservation has lapsed —
-  // candidates for the expiry job to cancel and release stock for.
   findExpiredPending() {
     return prisma.order.findMany({
       where: { status: "PENDING", reservationExpiresAt: { lt: new Date() } },
