@@ -24,9 +24,9 @@ While my company's main project is managed in a private repository, this demonst
 - **`Api-getway`** - Node.js(Typescript), express, Prisma, Postgress 
 - **`Auth-service`** - Node.js(Typescript), express, Prisma, Postgress, Jwt
 - **`Notification-service`** - Node.js(Typescript), express, Prisma, Postgress
-- **`Product-service`** - Node.js(Typescript), express, Prisma, Postgress, Jwt
-- **`Order-service`** - Node.js(Typescript), express, Prisma, Postgress, Jwt
-- **`Payment-service`** - Node.js(Typescript), express, Prisma, Postgress, Jwt
+- **`Product-service`** - Node.js(Typescript), express, Prisma, Postgress
+- **`Order-service`** - Node.js(Typescript), express, Prisma, Postgress
+- **`Payment-service`** - Node.js(Typescript), express, Prisma, Postgress
 
 ### Shared Packages
 - **`@fujibeauty/config`** -(express)whole application configuration
