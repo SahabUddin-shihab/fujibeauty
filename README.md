@@ -1,12 +1,12 @@
 # FujiBeauty - Microservices Architecture Showcase
 
-## 🎯 Project Overview
+##  Project Overview
 
 This repository demonstrates my expertise in **microservices architecture** and **Turborepo** monorepo management. It's a showcase project built to highlight my ability to design, develop, and orchestrate distributed systems with modern tooling and best practices.
 
 While my company's main project is managed in a private repository, this demonstration portfolio reflects the same level of professional excellence and architectural thinking I bring to enterprise-level development.
 
-## 🏗️ Architecture Highlights
+##  Architecture Highlights
 
 ### Monorepo Structure with Turborepo
 - **Modern Monorepo Management**: Leveraging Turborepo for efficient build orchestration and dependency management
@@ -18,7 +18,7 @@ While my company's main project is managed in a private repository, this demonst
 - **Docker Compose**: Seamless local development and testing environment
 - **Multi-Stage Builds**: Optimized container sizes for production deployment
 
-## 📦 Services & Packages
+##  Services & Packages
 
 ### Applications
 - **`Api-getway`** - Node.js(Typescript), express, Prisma, Postgress 
@@ -43,7 +43,7 @@ While my company's main project is managed in a private repository, this demonst
 - **Container**: Dockerized every services
 
 
-## 🔌 Service Configuration
+##  Service Configuration
 
 The API Gateway acts as the central entry point and routes requests to the appropriate microservices.
 
@@ -58,7 +58,7 @@ PAYMENT_SERVICE_URL=http://localhost:4004
 NODE_ENV=development
 ```
 
-## 🔗 Service Ports
+##  Service Ports
 
 | Service | Port | URL |
 |---|---:|---|
@@ -68,7 +68,7 @@ NODE_ENV=development
 | Order Service | `4003` | `http://localhost:4003` |
 | Payment Service | `4004` | `http://localhost:4004` |
 
-## 📦 Package.json Structure
+##  Package.json Structure
 
 ```json
 {
