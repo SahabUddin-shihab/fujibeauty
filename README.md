@@ -24,7 +24,7 @@ While my company's main project is managed in a private repository, this demonst
 ### 1. Clone the Repository
 
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/SahabUddin-shihab/fujibeauty.git
 ```
 
 ```bash
