@@ -21,19 +21,52 @@ While my company's main project is managed in a private repository, this demonst
 ## 📦 Services & Packages
 
 ### Applications
-- **`docs`** - Next.js documentation/API showcase app
-- **`web`** - Main Next.js web application
+- **`Api-getway`** - Node.js(Typescript), express, Prisma, Postgress 
+- **`Auth-service`** - Node.js(Typescript), express, Prisma, Postgress, Jwt
+- **`Notification-service`** - Node.js(Typescript), express, Prisma, Postgress
+- **`Product-service`** - Node.js(Typescript), express, Prisma, Postgress, Jwt
+- **`Order-service`** - Node.js(Typescript), express, Prisma, Postgress, Jwt
+- **`Payment-service`** - Node.js(Typescript), express, Prisma, Postgress, Jwt
 
 ### Shared Packages
-- **`@repo/ui`** - Reusable React component library
-- **`@repo/eslint-config`** - Shared ESLint configurations (includes eslint-config-next and eslint-config-prettier)
-- **`@repo/typescript-config`** - Shared TypeScript configurations
+- **`@fujibeauty/config`** -(express)whole application configuration
+- **`@fujibeauty/database`** -(express) Database configuration
+- **`@fujibeauty/kafka`** -(express) Kafka configuration
+- **`@fujibeauty/logger`** -(express) looger configuration
+- **`@fujibeauty/shared-datatypes`** -(express) declared datatypes
+- **`@fujibeauty/utils`** -(express) project global utils file
 
 ### Microservices Features
 - **Independent Deployability**: Each service can be deployed separately
 - **API Gateway Pattern**: Centralized routing and request handling
 - **Service Discovery**: Inter-service communication via well-defined interfaces
 - **Container**: Dockerized every services
+
+
+## 🔌 Service Configuration
+
+The API Gateway acts as the central entry point and routes requests to the appropriate microservices.
+
+```env
+API_GATEWAY_PORT=4000
+
+AUTH_SERVICE_URL=http://localhost:4001
+PRODUCT_SERVICE_URL=http://localhost:4002
+ORDER_SERVICE_URL=http://localhost:4003
+PAYMENT_SERVICE_URL=http://localhost:4004
+
+NODE_ENV=development
+```
+
+## 🔗 Service Ports
+
+| Service | Port | URL |
+|---|---:|---|
+| API Gateway | `4000` | `http://localhost:4000` |
+| Auth Service | `4001` | `http://localhost:4001` |
+| Product Service | `4002` | `http://localhost:4002` |
+| Order Service | `4003` | `http://localhost:4003` |
+| Payment Service | `4004` | `http://localhost:4004` |
 
 ## 📦 Package.json Structure
 
