@@ -18,6 +18,53 @@ While my company's main project is managed in a private repository, this demonst
 - **Docker Compose**: Seamless local development and testing environment
 - **Multi-Stage Builds**: Optimized container sizes for production deployment
 
+
+## 🚀 How to Run the Project
+
+### 1. Clone the Repository
+
+```bash
+git clone <your-repository-url>
+```
+
+```bash
+cd fujibeauty
+```
+
+### 2. Start Docker Services
+
+Start the required infrastructure using Docker Compose:
+
+```bash
+docker compose up -d
+```
+
+### 3. Install Dependencies
+
+Install all project dependencies from the root directory:
+
+```bash
+npm install
+```
+
+### 4. Start the Development Environment
+
+Run all microservices in development mode:
+
+```bash
+npm run dev
+```
+
+After starting the project, the services will be available on:
+
+| Service | URL |
+|---|---|
+| API Gateway | `http://localhost:4000` |
+| Auth Service | `http://localhost:4001` |
+| Product Service | `http://localhost:4002` |
+| Order Service | `http://localhost:4003` |
+| Payment Service | `http://localhost:4004` |
+
 ##  Services & Packages
 
 ### Applications
@@ -100,49 +147,3 @@ PAYMENT_SERVICE_URL=http://localhost:4004
   }
 }
 
-
-## 🚀 How to Run the Project
-
-### 1. Clone the Repository
-
-```bash
-git clone <your-repository-url>
-```
-
-```bash
-cd fujibeauty
-```
-
-### 2. Start Docker Services
-
-Start the required infrastructure using Docker Compose:
-
-```bash
-docker compose up -d
-```
-
-### 3. Install Dependencies
-
-Install all project dependencies from the root directory:
-
-```bash
-npm install
-```
-
-### 4. Start the Development Environment
-
-Run all microservices in development mode:
-
-```bash
-npm run dev
-```
-
-After starting the project, the services will be available on:
-
-| Service | URL |
-|---|---|
-| API Gateway | `http://localhost:4000` |
-| Auth Service | `http://localhost:4001` |
-| Product Service | `http://localhost:4002` |
-| Order Service | `http://localhost:4003` |
-| Payment Service | `http://localhost:4004` |
