@@ -19,7 +19,7 @@ While my company's main project is managed in a private repository, this demonst
 - **Multi-Stage Builds**: Optimized container sizes for production deployment
 
 
-## 🚀 How to Run the Project
+## How to Run the Project
 
 ### 1. Clone the Repository
 
