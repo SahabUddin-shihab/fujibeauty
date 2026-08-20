@@ -33,7 +33,7 @@ While my company's main project is managed in a private repository, this demonst
 - **Independent Deployability**: Each service can be deployed separately
 - **API Gateway Pattern**: Centralized routing and request handling
 - **Service Discovery**: Inter-service communication via well-defined interfaces
-- **Container Orchestration**: Docker-based deployment ready for Kubernetes
+- **Container**: Dockerized every services
 
 ## 📦 Package.json Structure
 
