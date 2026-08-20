@@ -55,7 +55,6 @@ PRODUCT_SERVICE_URL=http://localhost:4002
 ORDER_SERVICE_URL=http://localhost:4003
 PAYMENT_SERVICE_URL=http://localhost:4004
 
-NODE_ENV=development
 ```
 
 ##  Service Ports
